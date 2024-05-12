@@ -146,15 +146,6 @@ export default {
             "[AUDIO]",
             `Audio receiver pipe established! userId: ${member.id}, path: ${member.audioFilePath}`
           );
-
-          // ffmpeg -f s16le -ar 48k -ac 2 -i out.pcm out.mp3
-          // file '0.mp3'
-          // ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp3
-
-          [AUDIO] Audio receiver pipe established! userId: 1165455752350154792, path: /home/clee/github/discord-listener/audio/1165455752350154792/1
-[AUDIO] Audio receiver pipe established! userId: 1212525316577173554, path: /home/clee/github/discord-listener/audio/1212525316577173554/2
-[AUDIO] Audio receiver pipe established! userId: 941683178920378439, path: /home/clee/github/discord-listener/audio/941683178920378439/0
-[AUDIO] Audio receiver pipe established! userId: 820019334117195787, path: /home/clee/github/discord-listener/audio/820019334117195787/1
         }
       });
     }

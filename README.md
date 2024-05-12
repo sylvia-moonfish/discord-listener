@@ -30,3 +30,15 @@ Look at .env.example and create a .env file.
 - `npm run deploy`: Deploys bot commands to the target discord guild. This has to be ran after bot joins the guild.
 
 - `npm run start`: This will start the bot and begin listening to the discord websocket/API.
+
+## Collected samples
+
+The sign up members and their data will be recorded as a local json file named `.db.json`.
+
+The collected audio samples will be in the `audio` directory. The samples are organized by each member's discord user id. Use the following command with ffmpeg to convert the samples to wav file.
+
+```
+ffmpeg -f s16le -ar 48k -ac 2 -i {input_filename} {output_filename}.wav
+```
+
+The converted wav files can then be used with RVC. However, it is recommended to remove silences, convert to mono and concatenate all wav files before putting it into RVC.
